@@ -9,6 +9,25 @@
     --main-text-color: black;
     --main-logo: url("../img/logoIPN.png");
 }
+ 
+/** Formato para distintos temas **/
+:root.normal{
+    --main-bg-color: white;
+    --main-text-color: black;
+    --main-logo: url("../img/logoIPN.png");
+}
+
+:root.navidad {
+    --main-bg-color: rgb(92, 180, 180);
+    --main-text-color: green;
+    --main-logo: url("../img/logoNavidad.png");
+}
+
+:root.dark {
+    --main-bg-color: black;
+    --main-text-color: white;
+    --main-logo: url("../img/logoDark.jpg");
+}
 
 /** Se asigna por Custom Properties en CSS **/
 /** Uso de propiedades con variables */
@@ -22,26 +41,6 @@ body {
     width: 100px;
     float: right;
     content: var(--main-logo);
-}
-
-/** Formato para distintos temas **/
-
-body.normal {
-    --main-bg-color: white;
-    --main-text-color: black;
-    --main-logo: url("../img/logoIPN.png");
-}
-
-body.dark {
-    --main-bg-color: black;
-    --main-text-color: white;
-    --main-logo: url("../img/logoDark.jpg");
-}
-
-body.navidad {
-    --main-bg-color: rgb(92, 180, 180);
-    --main-text-color: green;
-    --main-logo: url("../img/logoNavidad.png");
 }
 
 /** formatos para texto específico */

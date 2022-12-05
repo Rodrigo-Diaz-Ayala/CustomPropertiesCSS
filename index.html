@@ -1,49 +1,38 @@
+<!--
+    Ejercicio de ejemplo de cambio de Tema por Custom Properties de CSS y HTML
+    Rodrigo Díaz Ayala
+-->
 <!DOCTYPE html>
 <HTML>
     <HEAD>
+        <meta charset="utf-8" />
         <LINK rel="stylesheet" href="./css/miEstilacho.css">
-        <TITLE>Prueba RDA</TITLE>
-        <script>
-            function cambioTema(Tema) {
-                document.body.classList.toggle(Tema);
-            }
-        </script>
+        <TITLE>Ajuste de Temas</TITLE>
+        <SCRIPT>
+            /** Función Script de cambio de Tema **/
+            function SetTema(Tema){
+                document.documentElement.className = Tema;
+            }  
+        </SCRIPT>
     </HEAD>
     <BODY>
         <DIV class="opcionTemas">
-            <button onclick="cambioTema('navidad')">Navidad</button>
-            <button onclick="cambioTema('dark')">Dark</button>
-            <button onclick="cambioTema('normal')">Normal</button>
+            <button onclick="SetTema('navidad')">Navidad</button>
+            <button onclick="SetTema('dark')">Dark</button>
+            <button onclick="SetTema('normal')">Normal</button>
         </DIV>
-        <!--
-        <DIV>
-            <form>
-                <input type="radio" name="Tema" value="navidad" onclick="cambioNavidad()">Navidad
-                <input type="radio" name="Tema" value="dark" onclick="cambioDark()">Dark
-                <input type="radio" name="Tema" value="normal" checked onclick="cambioNormal()">Normal
-            </form>
-        </DIV>
-        <div>
-            <p>Temas: </p>
-            <p onclick="cambioNavidad()">Navidad</p>
-            <p onclick="cambioDark()">Dark</p>
-            <p onclick="cambioNormal()">Normal</p>
-        </div>
-        -->
-
         <DIV>
             <img class="logo" src="./img/logoIPN.png">    
             <H1>¡Hola Mundo!</H1>
         </DIV>
         <DIV>
-            <P>Ejemplode Custom Properties en CSS</P>
+            <P>Ejemplo de Cambio de Temas con Custom Properties en CSS y HTML</P>
         </DIV>
         <div class="grande">
-            <P>Ejemplode Custom Properties en CSS</P>
-            <BR />
+            <P>Título Grande</P>
         </div>
         <div class="chica">
-            <P>Ejemplode Custom Properties en CSS</P>
+            <P>Título chico</P>
             <BR />
             <P>Otro Párrafo</P>
         </div>

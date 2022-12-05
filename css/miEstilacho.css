@@ -1,0 +1,76 @@
+/** 
+    Mi estilacho de prueba
+    Por Rodrigo Díaz Ayala
+ **/
+
+ /* Creamos variables (Custom Properties) y damos valores de inicio */
+ :root {
+    --main-bg-color: white;
+    --main-text-color: black;
+    --main-logo: url("../img/logoIPN.png");
+}
+
+/** Se asigna por Custom Properties en CSS **/
+/** Uso de propiedades con variables */
+
+body {
+    background-color: var(--main-bg-color);
+    color:var(--main-text-color);
+}
+
+.logo {
+    width: 100px;
+    float: right;
+    content: var(--main-logo);
+}
+
+/** Formato para distintos temas **/
+
+body.normal {
+    --main-bg-color: white;
+    --main-text-color: black;
+    --main-logo: url("../img/logoIPN.png");
+}
+
+body.dark {
+    --main-bg-color: black;
+    --main-text-color: white;
+    --main-logo: url("../img/logoDark.jpg");
+}
+
+body.navidad {
+    --main-bg-color: rgb(92, 180, 180);
+    --main-text-color: green;
+    --main-logo: url("../img/logoNavidad.png");
+}
+
+/** formatos para texto específico */
+h1 {
+    text-align: center; 
+    color: blue;
+}
+
+div {
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    text-decoration: underline;
+}
+
+.grande {
+    font-size: 50px; 
+    color: aqua;
+    text-decoration: none;
+}
+
+.chica {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.opcionTemas {
+    float: none;
+    color:red;
+    display: inline-block;
+    text-align: right;
+}
+
+

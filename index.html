@@ -4,21 +4,16 @@
         <LINK rel="stylesheet" href="./css/miEstilacho.css">
         <TITLE>Prueba RDA</TITLE>
         <script>
-            function cambioNavidad() {
-                document.body.classList.toggle("navidad");
-            }
-            function cambioDark() {
-                document.body.classList.toggle("dark");
-            }
-            function cambioNormal() {
-                document.body.classList.toggle("normal");
+            function cambioTema(Tema) {
+                document.body.classList.toggle(Tema);
             }
         </script>
     </HEAD>
     <BODY>
         <DIV class="opcionTemas">
-            <button onclick="cambioNavidad()">Navidad</button>
-            <button onclick="cambioDark()">Dark</button>
+            <button onclick="cambioTema('navidad')">Navidad</button>
+            <button onclick="cambioTema('dark')">Dark</button>
+            <button onclick="cambioTema('normal')">Normal</button>
         </DIV>
         <!--
         <DIV>
